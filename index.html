@@ -177,9 +177,39 @@
         <object type="" data="http://m2.chiasenhac.vn/s/tsvb7qdtqqtemf.swf" width="300" height="300">
         </object>
         <!-- html do hoa -->
-        <canvas width="500" height="500" style="border: 1px solid red;">
-
+        <canvas id="myCanvas" width="500" height="500" style="border: 1px solid red;">
         </canvas>
         <!-- canvans nay di kem voi ngon ngu javascript de thiet lap cac hieu ung do hoa -->
+        <script type="text/javascript">
+            // dinh nghia js noi tuyen
+            // muc dich su dung cac ma lenh js de hien thi che do do hoa len the canvas HTML
+            // can truy xuat hay truy cap vao the HTML Canvas
+            var canvas = document.getElementById('myCanvas');
+            // thiet lap che do do hoa 2D
+            var ctx = canvas.getContext('2d');
+            // bat dau thuc thi cac lenh ve do hoa
+            ctx.beginPath();
+            // ve duong thang bang js va hien thi len the canvas
+            // xac dinh toa do diem bat dau
+            ctx.moveTo(50,50);
+            // xac dinh toa do diem ket thuc
+            ctx.lineTo(300,300);
+            // tao do dam nhat cho duong thang do
+            ctx.lineWidth = 5;
+            // tao mau sac cho duong thang do
+            ctx.strokeStyle = 'red';
+            // thuc thi ve
+            ctx.stroke();
+            // tiep tuc thuc thi ve cac hinh do hoa khac
+            ctx.beginPath();
+            // thiet lap font chu
+            ctx.font = 'tahoma 40pt';
+            // thiet lap mau chu
+            ctx.fillStyle = 'blue';
+            // can le cho van ban
+            ctx.textAlign = 'center';
+            // ve chu
+            ctx.fillText('LPHP1808E',120,120);
+        </script>
     </body>
 </html>
