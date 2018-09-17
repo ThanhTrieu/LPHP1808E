@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+div.box{
+    width: 200px;
+    height: 80px;
+    border: 1px solid red;
+    /* overflow: hidden; */
+    /* overflow-y: scroll;
+    overflow-x: scroll; */
+    overflow: auto;
+}
+div.box p{
+    width: 300px;
+}
+div.container{
+    width: 980px;
+    margin: 20px auto;
+    border: 1px solid red;
+}
+
+div.container div.child-1{
+    width: 50%;
+    float: left;
+    background-color: green;
+    height: 500px;
+}
+div.container div.child-2{
+    width: 50%;
+    float: left;
+    background: pink;
+    height: 500px;
+}
+
+div.container div.child-2{
+    background: violet;
+    background: linear-gradient(30deg,rgb(145, 167, 188),
+        rgb(145, 147, 88), rgb(45, 167, 18));
+    /* background: -moz-linear-gradient(30deg,blue,yellow,red,orange);
+    background: -webkit-linear-gradient(30deg,blue,yellow,red,orange);
+    background: -o-linear-gradient(30deg,blue,yellow,red,orange);
+    background: -ms-linear-gradient(30deg,blue,yellow,red,orange); */
+}
+/* css responvie*/
+@media only all and (min-width: 425px) and (max-width: 767px) {
+    div.container div.child-1, div.child-2 {
+        width: 100%;
+        float: none;
+    }
+    /* code css tiep */
+    div.container div.child-1 img {
+        display: none;
+    }
+    div.container div.child-1{
+        background-color: yellow;
+    }
+    div.container div.child-2{
+        background-color: violet;
+    }
+}
+
+/* @media only all and (min-width: 425px) and (max-width: 767px) {
+
+} */
+.clear{
+    clear: both;
+}
+div.content{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    -webkit-transform: skew(30deg, 55deg);
+       -moz-transform: skew(30deg, 55deg);
+        -ms-transform: skew(30deg, 55deg);
+         -o-transform: skew(30deg, 55deg);
+            /* transform: translate(300px, 300px); */
+            /* transform: rotate(45deg); */
+            /* transform: scale(3, 3); */
+            transform: skew(30deg, 55deg);
+}
+
