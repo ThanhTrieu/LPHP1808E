@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+div.content{
+    width: 100%;
+    min-height: 890px;
+    background: url('../images/bg.jpeg') no-repeat;
+    background-size: cover;
+    position: relative;
+}
+div.content form.form-ver{
+    width: 500px;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    box-shadow: 10px 8px black;
+}
+div.content form.form-ver > div.form-group{
+    display: block;
+    width: 100%;
+    margin: 22px 0px;
+}
+div.content form.form-ver > div.form-group input[class='form-control'] {
+    border: 2px solid #ccc;
+    width: 100%;
+    height: 32px;
+    border-radius: 3px;
+    margin-top: 5px;
+}
+div.content form.form-ver > div.form-group input[class='form-control']:focus{
+    border: 2px solid blue;
+}
+div.content form.form-ver > button.btn {
+    padding: 12px 20px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: blue;
+    color: white;
+}
+div.content form.form-ver > button.btn:hover{
+    cursor: pointer;
+    background-color: green;
+}
+

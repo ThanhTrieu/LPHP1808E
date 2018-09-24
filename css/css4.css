@@ -29,13 +29,17 @@ nav ul li a:hover{
     color: yellow;
 }
 nav ul li div.menuTable{
-    display: none;
+    /* display: none; */
+    opacity: 0;
+    /* width: 0px;
+    height: 0px; */
     background-color: #4C4A4F;
     width: 530px;
     position: absolute;
     top: 60px;
     left: 0px;
     z-index: 0;
+    transition: all 5s ease 0s;
 }
 nav ul li > div.menuTable ul {
     display: table-row;
@@ -51,7 +55,8 @@ nav ul li > div.menuTable ul li a{
     text-align: left;
 }
 nav ul li:hover > div.menuTable {
-    display: block;
+    /* display: block; */
+    opacity: 1;
 }
 nav ul li div.menuTable ul li > div.menuTable {
     z-index: 1;
